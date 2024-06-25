@@ -5,10 +5,10 @@ from telebot import types
 
 # подключение к PostgreSQL
 db_params = {
-        'database':'Task',
-        'user' : 'postgres',
-        'password' : '7084',
-        'port' : '5432'
+        'database':'name',
+        'user' : 'user',
+        'password' : 'password',
+        'port' : 'port'
 }
 
 
@@ -28,7 +28,7 @@ def get_tasks_from_db(id):
             return tasks
 
 
-bot = telebot.TeleBot('7325104276:AAEKKgFy-MwGG6luKptfgyBtVj45IZZW30c')
+bot = telebot.TeleBot('TOKEN')
 
 @bot.message_handler(commands = ['start'])
 def start(message):
